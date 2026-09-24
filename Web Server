@@ -1,0 +1,35 @@
+root@ubuntu:~$ hotname
+Command 'hotname' not found, did you mean:
+  command 'hostname' from deb hostname (3.23+nmu1ubuntu1)
+Try: apt install <deb name>
+root@ubuntu:~$ hostname
+ubuntu
+root@ubuntu:~$ pwd
+/root
+root@ubuntu:~$ mkdir aula3
+root@ubuntu:~$ cd aula3
+root@ubuntu:~/aula3$  echo "<h1>computacao em nuvem</h1>"index.html
+<h1>computacao em nuvem</h1>index.html
+root@ubuntu:~/aula3$ echo "<p>meu primeiro servico web remoto</p>">>index.html
+root@ubuntu:~/aula3$ cat index.html
+<p>meu primeiro servico web remoto</p>
+root@ubuntu:~/aula3$ python3 -m http.server 8080
+Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
+127.0.0.1 - - [09/Sep/2026 23:18:37] "GET / HTTP/1.1" 200 -
+^C
+Keyboard interrupt received, exiting.
+root@ubuntu:~/aula3$  echo "<p>aluno: beto</p>">>index.html
+root@ubuntu:~/aula3$ echo "<P>aula 3 - modelos de implementacao</p>">>index.html
+root@ubuntu:~/aula3$ python3 -m http.server 8080
+Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
+127.0.0.1 - - [09/Sep/2026 23:25:16] "GET / HTTP/1.1" 200 -
+
+
+
+root@ubuntu:~$ curl localhost:8080
+<p>meu primeiro servico web remoto</p>
+root@ubuntu:~$ curl localhost:8080 
+<p>meu primeiro servico web remoto</p>
+<p>aluno: beto</p>
+<P>aula 3 - modelos de implementacao</p>
+root@ubuntu:~$ 
